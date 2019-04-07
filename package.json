@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel ./index.html --open",
     "build": "npm run parcel && npm run sass",
-    "sass": "sass",
+    "sass": "node-sass ./sass/main.scss ./dist/main.css",
     "parcel": "parcel build ./index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
