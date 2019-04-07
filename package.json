@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./src/index.html --open",
+    "start": "parcel ./index.html --open",
+    "build": "npm run parcel && npm run sass",
+    "sass": "sass",
+    "parcel": "parcel build ./index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
